@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GolamRabbii Font Mega-Collection — 177,259 Fonts</title>
+<style>
+  :root {
+    --bg: #0d1117; --surface: #161b22; --border: #30363d;
+    --accent: #58a6ff; --green: #3fb950; --text: #e6edf3;
+    --muted: #8b949e; --gold: #d29922;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  header { background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #006064 100%); padding: 2rem; text-align: center; }
+  header h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; }
+  header .stats { display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; flex-wrap: wrap; }
+  .stat-box { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 0.75rem 1.5rem; }
+  .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--gold); }
+  .stat-box .label { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+  .controls { padding: 1rem 2rem; display: flex; gap: 1rem; align-items: center; background: var(--surface); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  #search { flex: 1; min-width: 200px; padding: 0.6rem 1rem; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 1rem; }
+  #search:focus { outline: none; border-color: var(--accent); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; padding: 1.5rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; cursor: pointer; transition: border-color 0.2s, transform 0.1s; }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card .vault-id { font-size: 0.75rem; color: var(--muted); font-weight: 600; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+  .card .vault-name { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; word-break: break-word; }
+  .card .font-count { display: inline-block; background: rgba(63,185,80,0.15); color: var(--green); border: 1px solid rgba(63,185,80,0.3); border-radius: 20px; padding: 0.2rem 0.7rem; font-size: 0.85rem; font-weight: 600; }
+  .card .bar { margin-top: 0.8rem; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .card .bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--green)); border-radius: 2px; }
+  #total-shown { color: var(--muted); font-size: 0.9rem; }
+  footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); }
+  .badge { display: inline-block; background: var(--gold); color: #000; border-radius: 4px; padding: 0.15rem 0.5rem; font-size: 0.75rem; font-weight: 700; margin-left: 0.5rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🌐 GolamRabbii Font Mega-Collection</h1>
+  <p style="color:rgba(255,255,255,0.7);margin-top:0.3rem">The World's Largest Free & Open-Source Multilingual Font Archive</p>
+  <div class="stats">
+    <div class="stat-box"><div class="num">177,259</div><div class="label">Total Fonts</div></div>
+    <div class="stat-box"><div class="num">100</div><div class="label">Sovereign Vaults</div></div>
+    <div class="stat-box"><div class="num">100%</div><div class="label">Free & Open Source</div></div>
+    <div class="stat-box"><div class="num">100+</div><div class="label">Languages Covered</div></div>
+  </div>
+</header>
+<div class="controls">
+  <input type="text" id="search" placeholder="🔍 Search vaults by name or number..." oninput="filterVaults()">
+  <span id="total-shown">Showing 100 vaults</span>
+</div>
+<div class="grid" id="grid"></div>
+<footer>
+  <p>Generated: 2026-10-30 19:37 &nbsp;|&nbsp; 
+  GolamRabbii Font Mega-Collection &nbsp;|&nbsp; 
+  <span class="badge">103,136+ Fonts</span></p>
+  <p style="margin-top:0.5rem">All fonts are free and open-source. Licensed under OFL, Apache 2.0, or compatible licenses.</p>
+</footer>
+<script>
+const MAX_COUNT = 63895;
+const VAULTS = [
+  {
+    "name": "100_Osage_Indigenous",
+    "count": 6
+  },
+  {
+    "name": "10_Cyrillic_Slavic",
+    "count": 16693
+  },
+  {
+    "name": "11_Korean_Hangul",
+    "count": 2832
+  },
+  {
+    "name": "12_Chinese_Hanzi",
+    "count": 1936
+  },
+  {
+    "name": "13_Vietnamese_TiengViet",
+    "count": 3605
+  },
+  {
+    "name": "14_Thai_Siam",
+    "count": 2347
+  },
+  {
+    "name": "15_Malay_Nusantara_ID_MY",
+    "count": 3840
+  },
+  {
+    "name": "16_Developer_Coding_Monospace",
+    "count": 5276
+  },
+  {
+    "name": "17_Dravidian_Indic_SouthAsia",
+    "count": 1003
+  },
+  {
+    "name": "18_African_GeEz_Amharic_Heritage",
+    "count": 454
+  },
+  {
+    "name": "19_Persian_Urdu_Nastaliq",
+    "count": 1685
+  },
+  {
+    "name": "1_Bengali Fonts",
+    "count": 7504
+  },
+  {
+    "name": "20_Hebrew_Ivrit_Judaic",
+    "count": 652
+  },
+  {
+    "name": "21_Greek_Hellenic_Polytonic",
+    "count": 1885
+  },
+  {
+    "name": "22_Khmer_Cambodian_Angkor",
+    "count": 449
+  },
+  {
+    "name": "23_Myanmar_Burmese_Pyidaungsu",
+    "count": 328
+  },
+  {
+    "name": "24_Sinhala_SriLankan_Lanka",
+    "count": 320
+  },
+  {
+    "name": "25_Lao_LanXang",
+    "count": 454
+  },
+  {
+    "name": "26_Tibetan_Himalayan_Bodhi",
+    "count": 136
+  },
+  {
+    "name": "27_Georgian_Kartvelian_Mkhedruli",
+    "count": 238
+  },
+  {
+    "name": "28_Armenian_Haykakan",
+    "count": 284
+  },
+  {
+    "name": "29_Mongolian_Hudum_Nomadic",
+    "count": 18
+  },
+  {
+    "name": "2_English_Latin",
+    "count": 63895
+  },
+  {
+    "name": "30_Javanese_AksaraJawa_Heritage",
+    "count": 10
+  },
+  {
+    "name": "31_Sundanese_AksaraSunda_Priangan",
+    "count": 8
+  },
+  {
+    "name": "32_Balinese_AksaraBali_Dewata",
+    "count": 10
+  },
+  {
+    "name": "33_Batak_SuratBatak_Toba",
+    "count": 2
+  },
+  {
+    "name": "34_Buginese_Lontara_Makassar",
+    "count": 2
+  },
+  {
+    "name": "35_Tagalog_Baybayin_Kapampangan",
+    "count": 2
+  },
+  {
+    "name": "36_Thaana_Dhivehi_Maldivian",
+    "count": 18
+  },
+  {
+    "name": "37_Chakma_Changma_AjhaPath",
+    "count": 4
+  },
+  {
+    "name": "38_Sylheti_Nagri_Heritage",
+    "count": 6
+  },
+  {
+    "name": "39_Meetei_Mayek_Manipuri",
+    "count": 36
+  },
+  {
+    "name": "3_Arabic_Islamic",
+    "count": 28021
+  },
+  {
+    "name": "40_Odia_Oriya_Utkala",
+    "count": 110
+  },
+  {
+    "name": "41_Gujarati_Gurjar_Heritage",
+    "count": 128
+  },
+  {
+    "name": "42_Gurmukhi_Punjabi_Khalsa",
+    "count": 104
+  },
+  {
+    "name": "43_Assamese_Axomiya_Lipi",
+    "count": 220
+  },
+  {
+    "name": "44_Santali_OlChiki_Adivasi",
+    "count": 26
+  },
+  {
+    "name": "45_Sora_Sompeng_Heritage",
+    "count": 26
+  },
+  {
+    "name": "46_Lepcha_Rong_Himalayan",
+    "count": 6
+  },
+  {
+    "name": "47_Limbu_Sirijonga_Kirat",
+    "count": 6
+  },
+  {
+    "name": "48_Newa_Prachalit_Nepal",
+    "count": 6
+  },
+  {
+    "name": "49_Tirhuta_Mithilakshar_Maithili",
+    "count": 6
+  },
+  {
+    "name": "4_Icons_Symbols",
+    "count": 2215
+  },
+  {
+    "name": "50_Syriac_Aramaic_Peshitta",
+    "count": 74
+  },
+  {
+    "name": "51_Coptic_Bohairic_Sahidic",
+    "count": 6
+  },
+  {
+    "name": "52_Tifinagh_Amazigh_Berber",
+    "count": 50
+  },
+  {
+    "name": "53_NKo_Manding_Heritage",
+    "count": 14
+  },
+  {
+    "name": "54_Vai_Liberian_Syllabary",
+    "count": 6
+  },
+  {
+    "name": "55_Adlam_Fulani_Pulaar",
+    "count": 32
+  },
+  {
+    "name": "56_Osmanya_Somali_Heritage",
+    "count": 6
+  },
+  {
+    "name": "57_Cherokee_Tsalagi_Sequoyah",
+    "count": 56
+  },
+  {
+    "name": "58_Canadian_Aboriginal_Syllabics",
+    "count": 70
+  },
+  {
+    "name": "59_Runic_Glagolitic_Ancient",
+    "count": 12
+  },
+  {
+    "name": "5_Legacy_Archive",
+    "count": 3339
+  },
+  {
+    "name": "60_Gothic_Ancient_Codex",
+    "count": 78
+  },
+  {
+    "name": "61_Ogham_Celtic_Monumental",
+    "count": 6
+  },
+  {
+    "name": "62_Old_Permic_Abur",
+    "count": 6
+  },
+  {
+    "name": "63_Old_Turkic_Orkhon_Runes",
+    "count": 6
+  },
+  {
+    "name": "64_Old_Hungarian_Rovas",
+    "count": 6
+  },
+  {
+    "name": "65_Old_South_Arabian_Musnad",
+    "count": 6
+  },
+  {
+    "name": "66_Phoenician_Archaic",
+    "count": 6
+  },
+  {
+    "name": "67_Avestan_Sacred_Pahlavi",
+    "count": 12
+  },
+  {
+    "name": "68_Kharosthi_Gandhara_SilkRoad",
+    "count": 6
+  },
+  {
+    "name": "69_Brahmi_Ashokan_Imperial",
+    "count": 6
+  },
+  {
+    "name": "6_World_Languages",
+    "count": 998
+  },
+  {
+    "name": "70_Cuneiform_Sumero_Akkadian",
+    "count": 8
+  },
+  {
+    "name": "71_Egyptian_Hieroglyphs_Pharaonic",
+    "count": 6
+  },
+  {
+    "name": "72_Linear_A_B_Mycenaean",
+    "count": 8
+  },
+  {
+    "name": "73_Tangut_Western_Xia",
+    "count": 6
+  },
+  {
+    "name": "74_Nushu_Women_Phonetic",
+    "count": 18
+  },
+  {
+    "name": "75_Bassa_Vah_Liberian",
+    "count": 22
+  },
+  {
+    "name": "76_Medefaidrin_Nigerian",
+    "count": 22
+  },
+  {
+    "name": "77_Mandaic_Gnostic_Scripture",
+    "count": 6
+  },
+  {
+    "name": "78_Samaritan_Hebrew_Archaic",
+    "count": 6
+  },
+  {
+    "name": "79_Hanifi_Rohingya_National",
+    "count": 22
+  },
+  {
+    "name": "7_Hindi_Devanagari",
+    "count": 12541
+  },
+  {
+    "name": "80_Cham_Indigenous",
+    "count": 56
+  },
+  {
+    "name": "81_Tai_Tham_Lanna",
+    "count": 22
+  },
+  {
+    "name": "82_Tai_Viet",
+    "count": 6
+  },
+  {
+    "name": "83_Kayah_Li_Karen",
+    "count": 22
+  },
+  {
+    "name": "84_Pahawh_Hmong",
+    "count": 6
+  },
+  {
+    "name": "85_Ahom_Sacred_Tai",
+    "count": 6
+  },
+  {
+    "name": "86_Modi_Historical",
+    "count": 6
+  },
+  {
+    "name": "87_Sharada_Classical",
+    "count": 6
+  },
+  {
+    "name": "88_Kaithi_Historic",
+    "count": 6
+  },
+  {
+    "name": "89_Grantha_Vedic",
+    "count": 8
+  },
+  {
+    "name": "8_German_Deutsche_Schriften",
+    "count": 10283
+  },
+  {
+    "name": "90_Takri_Himalayan",
+    "count": 6
+  },
+  {
+    "name": "91_Saurashtra",
+    "count": 6
+  },
+  {
+    "name": "92_Sogdian_SilkRoad",
+    "count": 8
+  },
+  {
+    "name": "93_Imperial_Aramaic",
+    "count": 6
+  },
+  {
+    "name": "94_Nabataean_Palmyrene",
+    "count": 8
+  },
+  {
+    "name": "95_Cypriot_Syllabic",
+    "count": 8
+  },
+  {
+    "name": "96_Anatolian_Hieroglyphs",
+    "count": 8
+  },
+  {
+    "name": "97_Bamum_Royal",
+    "count": 22
+  },
+  {
+    "name": "98_Mende_Kikakui",
+    "count": 6
+  },
+  {
+    "name": "99_Deseret_Phonetic",
+    "count": 6
+  },
+  {
+    "name": "9_Japanese_Nihongo",
+    "count": 2470
+  }
+];
+
+function buildCards(list) {
+  const grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  list.forEach(v => {
+    const parts = v.name.split("_");
+    const id = parts[0];
+    const name = parts.slice(1).join(" ").replace(/_/g, " ");
+    const pct = Math.round((v.count / MAX_COUNT) * 100);
+    grid.innerHTML += `
+      <div class="card">
+        <div class="vault-id">VAULT #${id}</div>
+        <div class="vault-name">${name}</div>
+        <span class="font-count">${v.count.toLocaleString()} fonts</span>
+        <div class="bar"><div class="bar-fill" style="width:${pct}%"></div></div>
+      </div>`;
+  });
+  document.getElementById("total-shown").textContent = `Showing ${list.length} vault${list.length !== 1 ? "s" : ""}`;
+}
+
+function filterVaults() {
+  const q = document.getElementById("search").value.toLowerCase();
+  buildCards(VAULTS.filter(v => v.name.toLowerCase().includes(q)));
+}
+
+buildCards(VAULTS);
+</script>
+</body>
+</html>

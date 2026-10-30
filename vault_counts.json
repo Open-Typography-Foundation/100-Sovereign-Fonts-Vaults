@@ -1,0 +1,407 @@
+{
+  "generated": "2026-10-30T19:37:47.513132",
+  "total_vaults": 100,
+  "total_fonts": 177259,
+  "vaults": [
+    {
+      "name": "100_Osage_Indigenous",
+      "count": 6
+    },
+    {
+      "name": "10_Cyrillic_Slavic",
+      "count": 16693
+    },
+    {
+      "name": "11_Korean_Hangul",
+      "count": 2832
+    },
+    {
+      "name": "12_Chinese_Hanzi",
+      "count": 1936
+    },
+    {
+      "name": "13_Vietnamese_TiengViet",
+      "count": 3605
+    },
+    {
+      "name": "14_Thai_Siam",
+      "count": 2347
+    },
+    {
+      "name": "15_Malay_Nusantara_ID_MY",
+      "count": 3840
+    },
+    {
+      "name": "16_Developer_Coding_Monospace",
+      "count": 5276
+    },
+    {
+      "name": "17_Dravidian_Indic_SouthAsia",
+      "count": 1003
+    },
+    {
+      "name": "18_African_GeEz_Amharic_Heritage",
+      "count": 454
+    },
+    {
+      "name": "19_Persian_Urdu_Nastaliq",
+      "count": 1685
+    },
+    {
+      "name": "1_Bengali Fonts",
+      "count": 7504
+    },
+    {
+      "name": "20_Hebrew_Ivrit_Judaic",
+      "count": 652
+    },
+    {
+      "name": "21_Greek_Hellenic_Polytonic",
+      "count": 1885
+    },
+    {
+      "name": "22_Khmer_Cambodian_Angkor",
+      "count": 449
+    },
+    {
+      "name": "23_Myanmar_Burmese_Pyidaungsu",
+      "count": 328
+    },
+    {
+      "name": "24_Sinhala_SriLankan_Lanka",
+      "count": 320
+    },
+    {
+      "name": "25_Lao_LanXang",
+      "count": 454
+    },
+    {
+      "name": "26_Tibetan_Himalayan_Bodhi",
+      "count": 136
+    },
+    {
+      "name": "27_Georgian_Kartvelian_Mkhedruli",
+      "count": 238
+    },
+    {
+      "name": "28_Armenian_Haykakan",
+      "count": 284
+    },
+    {
+      "name": "29_Mongolian_Hudum_Nomadic",
+      "count": 18
+    },
+    {
+      "name": "2_English_Latin",
+      "count": 63895
+    },
+    {
+      "name": "30_Javanese_AksaraJawa_Heritage",
+      "count": 10
+    },
+    {
+      "name": "31_Sundanese_AksaraSunda_Priangan",
+      "count": 8
+    },
+    {
+      "name": "32_Balinese_AksaraBali_Dewata",
+      "count": 10
+    },
+    {
+      "name": "33_Batak_SuratBatak_Toba",
+      "count": 2
+    },
+    {
+      "name": "34_Buginese_Lontara_Makassar",
+      "count": 2
+    },
+    {
+      "name": "35_Tagalog_Baybayin_Kapampangan",
+      "count": 2
+    },
+    {
+      "name": "36_Thaana_Dhivehi_Maldivian",
+      "count": 18
+    },
+    {
+      "name": "37_Chakma_Changma_AjhaPath",
+      "count": 4
+    },
+    {
+      "name": "38_Sylheti_Nagri_Heritage",
+      "count": 6
+    },
+    {
+      "name": "39_Meetei_Mayek_Manipuri",
+      "count": 36
+    },
+    {
+      "name": "3_Arabic_Islamic",
+      "count": 28021
+    },
+    {
+      "name": "40_Odia_Oriya_Utkala",
+      "count": 110
+    },
+    {
+      "name": "41_Gujarati_Gurjar_Heritage",
+      "count": 128
+    },
+    {
+      "name": "42_Gurmukhi_Punjabi_Khalsa",
+      "count": 104
+    },
+    {
+      "name": "43_Assamese_Axomiya_Lipi",
+      "count": 220
+    },
+    {
+      "name": "44_Santali_OlChiki_Adivasi",
+      "count": 26
+    },
+    {
+      "name": "45_Sora_Sompeng_Heritage",
+      "count": 26
+    },
+    {
+      "name": "46_Lepcha_Rong_Himalayan",
+      "count": 6
+    },
+    {
+      "name": "47_Limbu_Sirijonga_Kirat",
+      "count": 6
+    },
+    {
+      "name": "48_Newa_Prachalit_Nepal",
+      "count": 6
+    },
+    {
+      "name": "49_Tirhuta_Mithilakshar_Maithili",
+      "count": 6
+    },
+    {
+      "name": "4_Icons_Symbols",
+      "count": 2215
+    },
+    {
+      "name": "50_Syriac_Aramaic_Peshitta",
+      "count": 74
+    },
+    {
+      "name": "51_Coptic_Bohairic_Sahidic",
+      "count": 6
+    },
+    {
+      "name": "52_Tifinagh_Amazigh_Berber",
+      "count": 50
+    },
+    {
+      "name": "53_NKo_Manding_Heritage",
+      "count": 14
+    },
+    {
+      "name": "54_Vai_Liberian_Syllabary",
+      "count": 6
+    },
+    {
+      "name": "55_Adlam_Fulani_Pulaar",
+      "count": 32
+    },
+    {
+      "name": "56_Osmanya_Somali_Heritage",
+      "count": 6
+    },
+    {
+      "name": "57_Cherokee_Tsalagi_Sequoyah",
+      "count": 56
+    },
+    {
+      "name": "58_Canadian_Aboriginal_Syllabics",
+      "count": 70
+    },
+    {
+      "name": "59_Runic_Glagolitic_Ancient",
+      "count": 12
+    },
+    {
+      "name": "5_Legacy_Archive",
+      "count": 3339
+    },
+    {
+      "name": "60_Gothic_Ancient_Codex",
+      "count": 78
+    },
+    {
+      "name": "61_Ogham_Celtic_Monumental",
+      "count": 6
+    },
+    {
+      "name": "62_Old_Permic_Abur",
+      "count": 6
+    },
+    {
+      "name": "63_Old_Turkic_Orkhon_Runes",
+      "count": 6
+    },
+    {
+      "name": "64_Old_Hungarian_Rovas",
+      "count": 6
+    },
+    {
+      "name": "65_Old_South_Arabian_Musnad",
+      "count": 6
+    },
+    {
+      "name": "66_Phoenician_Archaic",
+      "count": 6
+    },
+    {
+      "name": "67_Avestan_Sacred_Pahlavi",
+      "count": 12
+    },
+    {
+      "name": "68_Kharosthi_Gandhara_SilkRoad",
+      "count": 6
+    },
+    {
+      "name": "69_Brahmi_Ashokan_Imperial",
+      "count": 6
+    },
+    {
+      "name": "6_World_Languages",
+      "count": 998
+    },
+    {
+      "name": "70_Cuneiform_Sumero_Akkadian",
+      "count": 8
+    },
+    {
+      "name": "71_Egyptian_Hieroglyphs_Pharaonic",
+      "count": 6
+    },
+    {
+      "name": "72_Linear_A_B_Mycenaean",
+      "count": 8
+    },
+    {
+      "name": "73_Tangut_Western_Xia",
+      "count": 6
+    },
+    {
+      "name": "74_Nushu_Women_Phonetic",
+      "count": 18
+    },
+    {
+      "name": "75_Bassa_Vah_Liberian",
+      "count": 22
+    },
+    {
+      "name": "76_Medefaidrin_Nigerian",
+      "count": 22
+    },
+    {
+      "name": "77_Mandaic_Gnostic_Scripture",
+      "count": 6
+    },
+    {
+      "name": "78_Samaritan_Hebrew_Archaic",
+      "count": 6
+    },
+    {
+      "name": "79_Hanifi_Rohingya_National",
+      "count": 22
+    },
+    {
+      "name": "7_Hindi_Devanagari",
+      "count": 12541
+    },
+    {
+      "name": "80_Cham_Indigenous",
+      "count": 56
+    },
+    {
+      "name": "81_Tai_Tham_Lanna",
+      "count": 22
+    },
+    {
+      "name": "82_Tai_Viet",
+      "count": 6
+    },
+    {
+      "name": "83_Kayah_Li_Karen",
+      "count": 22
+    },
+    {
+      "name": "84_Pahawh_Hmong",
+      "count": 6
+    },
+    {
+      "name": "85_Ahom_Sacred_Tai",
+      "count": 6
+    },
+    {
+      "name": "86_Modi_Historical",
+      "count": 6
+    },
+    {
+      "name": "87_Sharada_Classical",
+      "count": 6
+    },
+    {
+      "name": "88_Kaithi_Historic",
+      "count": 6
+    },
+    {
+      "name": "89_Grantha_Vedic",
+      "count": 8
+    },
+    {
+      "name": "8_German_Deutsche_Schriften",
+      "count": 10283
+    },
+    {
+      "name": "90_Takri_Himalayan",
+      "count": 6
+    },
+    {
+      "name": "91_Saurashtra",
+      "count": 6
+    },
+    {
+      "name": "92_Sogdian_SilkRoad",
+      "count": 8
+    },
+    {
+      "name": "93_Imperial_Aramaic",
+      "count": 6
+    },
+    {
+      "name": "94_Nabataean_Palmyrene",
+      "count": 8
+    },
+    {
+      "name": "95_Cypriot_Syllabic",
+      "count": 8
+    },
+    {
+      "name": "96_Anatolian_Hieroglyphs",
+      "count": 8
+    },
+    {
+      "name": "97_Bamum_Royal",
+      "count": 22
+    },
+    {
+      "name": "98_Mende_Kikakui",
+      "count": 6
+    },
+    {
+      "name": "99_Deseret_Phonetic",
+      "count": 6
+    },
+    {
+      "name": "9_Japanese_Nihongo",
+      "count": 2470
+    }
+  ]
+}
