@@ -1,0 +1,21 @@
+services:
+  open-fonts:
+    image: golamrabbiii/open-fonts:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: open-typography-studio
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./font_browser.html:/var/www/opentypography/font_browser.html:ro
+      - ./vault_counts.json:/var/www/opentypography/vault_counts.json:ro
+      - ./00_MASTER_INDEX.md:/var/www/opentypography/00_MASTER_INDEX.md:ro
+    environment:
+      - TZ=UTC
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
