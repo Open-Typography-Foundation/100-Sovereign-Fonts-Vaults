@@ -4,7 +4,7 @@ cls
 echo ==============================================================================
 echo       OPEN TYPOGRAPHY FOUNDATION -- 100 SOVEREIGN MEGA-VAULTS ARCHIVE
 echo       Curated by Mohammad Golamrabbii -- 100% Free Public Digital Heritage
-echo       Total Verified Fonts: 400,237 across 100 Sovereign Vaults
+echo       Total Verified Fonts: 500,337 across 100 Sovereign Vaults
 echo ==============================================================================
 echo.
 echo Launching Interactive Offline Specimen Browser in default browser...
