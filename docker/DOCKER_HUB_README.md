@@ -1,7 +1,7 @@
 # 🌐 Open Typography Foundation — Official Docker Image
-### `golamrabbiii/open-fonts` • 334,000+ Verified Open-Source Typefaces across 100 Sovereign Vaults
+### `golamrabbiii/open-fonts` • 500,000+ Verified Open-Source Typefaces across 100 Sovereign Vaults
 
-[![Docker Image Version](https://img.shields.io/badge/Version-v3.0.0-blue.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/golamrabbiii/open-fonts)
+[![Docker Image Version](https://img.shields.io/badge/Version-v5.0.0-blue.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/golamrabbiii/open-fonts)
 [![Total Fonts](https://img.shields.io/badge/Total_Fonts-334,000%2B_Verified-gold.svg?style=for-the-badge)](#)
 [![Sovereign Vaults](https://img.shields.io/badge/Sovereign_Vaults-100_Independent_Vaults-critical.svg?style=for-the-badge)](#)
 [![License](https://img.shields.io/badge/License-100%25_Free_%26_Open_Source-success.svg?style=for-the-badge)](#)
@@ -9,7 +9,7 @@
 ---
 
 ## 🏛️ Overview
-`golamrabbiii/open-fonts` is the official containerized distribution of the **Open Typography Foundation**, curated by **Mohammad Golamrabbii**. It packages the master documentation, live web interactive previewer, catalog APIs, and cross-platform installation tools for **334,627+ open-source fonts** across **100 sovereign script vaults**.
+`golamrabbiii/open-fonts` is the official containerized distribution of the **Open Typography Foundation**, curated by **Mohammad Golamrabbii**. It packages the master documentation, live web interactive previewer, catalog APIs, and cross-platform installation tools for **500,337+ open-source fonts** across **100 sovereign script vaults**.
 
 ---
 

@@ -9,7 +9,7 @@ ACTION="${1:-serve}"
 
 echo "======================================================================"
 echo "  🏛️ OPEN TYPOGRAPHY FOUNDATION -- DOCKER MASTER CONTAINER"
-echo "  Curated by Mohammad Golamrabbii | 334,000+ Verified Fonts"
+echo "  Curated by Mohammad Golamrabbii | 500,000+ Verified Fonts"
 echo "======================================================================"
 
 case "$ACTION" in

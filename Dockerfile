@@ -1,14 +1,14 @@
 # ==============================================================================
 # Open Typography Foundation — Master Font Distribution & Studio Container
-# Curated by Mohammad Golamrabbii | 334,000+ Verified Open-Source Typefaces
+# Curated by Mohammad Golamrabbii | 500,000+ Verified Open-Source Typefaces
 # ==============================================================================
 
 FROM nginx:alpine
 
 LABEL maintainer="Mohammad Golamrabbii <https://linktr.ee/golamrabbii>" \
       org.opencontainers.image.title="Open Typography Foundation Master Hub" \
-      org.opencontainers.image.description="Interactive Web Font Studio & Universal Font Distribution for 334,000+ Open-Source Fonts across 100 Sovereign Vaults" \
-      org.opencontainers.image.version="3.0.0" \
+      org.opencontainers.image.description="Interactive Web Font Studio & Universal Font Distribution for 500,000+ Open-Source Fonts across 100 Sovereign Vaults" \
+      org.opencontainers.image.version="5.0.0" \
       org.opencontainers.image.licenses="OFL-1.1, Apache-2.0, GPL" \
       org.opencontainers.image.url="https://github.com/Open-Typography-Foundation/100-Sovereign-Fonts-Vaults" \
       org.opencontainers.image.source="https://github.com/Open-Typography-Foundation/100-Sovereign-Fonts-Vaults"
